@@ -148,7 +148,7 @@ button, button:hover, button:focus {
 }
 .btn-fzn {
     padding: 16px 24px;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 .btn-fzn-border {
     border: 1px solid var(--brand-normal);
@@ -160,16 +160,59 @@ button, button:hover, button:focus {
     color: var(--text-white);
     box-shadow: 4px 4px 2px 16px var(--shadow);
 }
+.btn-fzn-border-light {
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+}
+.btn-fzn-border-light:hover {
+    border: 1px solid var(--text-white);
+    background-color: var(--background-transparent);
+    color: var(--text-white);
+    box-shadow: 4px 4px 2px 16px var(--shadow);
+}
 .btn-fzn-filled {
     background-color: var(--brand-normal);
     color: var(--text-white);
-    border-radius: 50px;
 }
 .btn-fzn-filled:hover {
     background-color: var(--brand-hover);
     color: var(--text-light);
 }
 /*  End: Button by Fazanash  */
+
+/* Start Popup Header */
+.container-fluid.popup-ads {
+    background-color: var(--brand-normal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 20px;
+    color: var(--text-white);
+}
+#countdown ul {
+    display: flex;
+    justify-content: center;
+}
+#countdown li {
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+#countdown li span {
+    display: block;
+    font-size: 14px;
+}
+.container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+}
+/* End Popup Header */
 
 /* Start: Header */
 .header .container {
@@ -250,7 +293,12 @@ button, button:hover, button:focus {
     border-radius: 50px;
 }
 .container.hero .image {
-    
+    background-image: url(/assets/img/ornament/ornament-hero.png);
+    background-size: 75%;
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    padding: 32px 0 0;
+    overflow: hidden;
 }
 /* End Hero */
 
