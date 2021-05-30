@@ -147,7 +147,7 @@ button, button:hover, button:focus {
     box-shadow: none;
 }
 .btn-fzn {
-    padding: 16px 24px;
+    padding: 8px 24px;
     border-radius: 50px;
 }
 .btn-fzn-border {
@@ -181,13 +181,35 @@ button, button:hover, button:focus {
 /*  End: Button by Fazanash  */
 
 /* Start Popup Header */
-.container-fluid.popup-ads {
-    background-color: var(--brand-normal);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 16px 20px;
+#popupAds {
+    background-color: var(--background-dark);
+    padding: 20px;
     color: var(--text-white);
+    position: relative;
+}
+#popupAds .row .btn {
+    display: inline;
+}
+#popupAds .bi-x {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 8px;
+    background-color: var(--background-element);
+    color: var(--text-heading);
+}
+#popupAds .heading h3 {
+    color: var(--text-white);
+    margin-bottom: 0;
+    padding: 8px 0 8px 16px;
+    font-size: 14px;
+}
+#popupAds img {
+    width: 55px;
+}
+#popupAds .row .button {
+    display: flex;
+    justify-content: center;
 }
 #countdown ul {
     display: flex;
@@ -202,15 +224,9 @@ button, button:hover, button:focus {
     text-transform: uppercase;
     color: var(--text-white);
 }
-
 #countdown li span {
     display: block;
     font-size: 14px;
-}
-.container {
-    color: #333;
-    margin: 0 auto;
-    text-align: center;
 }
 /* End Popup Header */
 
@@ -277,15 +293,15 @@ button, button:hover, button:focus {
 /* End: Header */
 
 /* Container Start */
+.container {
+    padding: 0 20px 24px;
+}
 .container.not-header {
     padding: 32px 20px;
 }
 /* Container End */
 
 /* Start Hero */
-.container.hero {
-    flex-direction: column;
-}
 .container.hero .subtitle {
     background-color: var(--brand-accent);
     padding: 8px 16px;
