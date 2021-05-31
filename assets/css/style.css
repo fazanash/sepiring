@@ -555,9 +555,46 @@ button, button:hover, button:focus {
     .product .card {
         background-color: #EEEEEE;
         border: none;
+        padding: 24px;
         width: 354px;
-        padding: 16px;
         border-radius: 8px;
+        position: relative;
+    }
+    .product .card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+    .product .card .header {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        top: 24px;
+        padding: 24px;
+    }
+    .product .card .header p {
+        margin-bottom: 0;
+    }
+    .product .card .header .availability {
+        padding: 4px 8px;
+        border-radius: 4px;
+        background-color: var(--brand-accent);
+    }
+    .product .card .header .like {
+        background-color: rgba(238, 237, 237, 0.897);
+        box-shadow: 0 0px 20px 10px rgba(70, 67, 67, 0.219);
+        width: 32px;
+        height: 32px;
+        padding: 2px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    .product .card .header .like:hover {
+        cursor: pointer;
+    }
+    .product .card .header .like .bi {
+        color: #EB5757;
     }
     /* Product End */
     }
