@@ -560,9 +560,21 @@ button, button:hover, button:focus {
         border-radius: 8px;
         position: relative;
     }
-    .product .card img {
+    .product .card .card-body {
+        padding-bottom: 0;
+    }
+    .product .card .product-img {
         width: 100%;
+        height: 200px;
+        overflow: hidden;
         border-radius: 8px;
+    }
+    .product .card img {
+        width: 120%;
+    }
+    .product .card img:hover {
+        width: 100%;
+        cursor: pointer;
     }
     .product .card .header {
         position: absolute;
@@ -595,6 +607,22 @@ button, button:hover, button:focus {
     }
     .product .card .header .like .bi {
         color: #EB5757;
+    }
+    .product .card .card-title:hover {
+        cursor: pointer;
+    }
+    .product .card .card-meta .category {
+        color: var(--brand-normal);
+    }
+    .product .card .card-meta .category:hover {
+        cursor: pointer;
+    }
+    .product .card .card-meta .bi {
+        color: rgb(236, 177, 48);
+    }
+    .product .card .footer .btn-cart {
+        background-image: linear-gradient(to bottom left, #329952, #6BBE4E);
+        color: #fff;
     }
     /* Product End */
     }
