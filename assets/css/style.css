@@ -514,9 +514,6 @@ button, button:hover, button:focus {
     /* End: Hero */
 
     /* Start Services */
-    .container-fluid.services {
-
-    }
     .container-fluid.services .row {
         flex-direction: row;
     }
@@ -551,7 +548,17 @@ button, button:hover, button:focus {
     .container.feature .text.right {
         text-align: left;
     }
-    /* Feature End */   
+    /* Feature End */
+
+    /* Product Start */
+    .product .card {
+        background-color: #EEEEEE;
+        border: none;
+        width: 354px;
+        padding: 16px;
+        border-radius: 8px;
+    }
+    /* Product End */
     }
 
 @media (min-width:1200px) {
