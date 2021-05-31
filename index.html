@@ -190,15 +190,15 @@
           </button>
           <div class="row counter">
             <div class="col-3">
-              <h5 class="number">5248+</h5>
+              <h5 data-target="5248" class="count">0</h5>
               <h6 class="label">Costumers</h6>
             </div>
             <div class="col-3">
-              <h5 class="number">4658+</h5>
+              <h5 data-target="4658" class="count">0</h5>
               <h6 class="label">Ratings</h6>
             </div>
             <div class="col-3">
-              <h5 class="number">3463+</h5>
+              <h5 data-target="3463" class="count">0</h5>
               <h6 class="label">Users</h6>
             </div>
           </div>
@@ -240,7 +240,7 @@
         <h3><span class="lineword">New</span> Feature Released</h3>
       </div>
       <div class="row justify-content-center align-items-end">
-        <div class="col-sm-4 col-md-5 col-lg-3 text left">
+        <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 text left mx-3">
           <div class="row detail">
             <h5 class="title">Food Consultation</h5>
             <p class="desc">
@@ -268,14 +268,14 @@
             image
             d-flex
             align-items-start
-            order-lg-1 order-xl-0
+            order-md-1 order-xl-0
             d-flex
             justify-content-center
           "
         >
           <img src="/assets/img/app/app-chat.png" alt="" />
         </div>
-        <div class="col-sm-4 col-md-5 col-lg-3 text right">
+        <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 text right mx-3">
           <div class="row detail">
             <h5 class="title">Create Own Menu</h5>
             <p class="desc">
@@ -301,25 +301,21 @@
     <!-- Feature End -->
 
     <!-- Product Start -->
-    <div class="container not-hero not-header bg-variant product">
+    <div class="container not-hero not-header product">
       <div class="row mb-4">
-        <div class="row mb-3">
-          <div class="col-md-6 d-flex align-items-center justify-content-start">
-            <h3>Most <span class="lineword">Wanted</span></h3>
-          </div>
-          <div class="col-md-6 d-flex align-items-center justify-content-end">
-            <button class="btn btn-fzn">
-              View All <i class="bi bi-arrow-right"></i>
-            </button>
-          </div>
+        <div class="col heading d-flex">
+          <h3>Most <span class="lineword">Wanted</span></h3>
+          <a class="btn btn-fzn">
+            View All <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
       </div>
       <div class="row">
-        <div class="col d-flex justify-content-between">
+        <div class="col d-flex justify-content-between card-wrapper">
           <div class="card">
             <div class="product-img">
               <img
-                src="/assets/img/product/product-3.png"
+                src="/assets/img/product/product-2.png"
                 class="card-img-top"
               />
             </div>
@@ -350,11 +346,94 @@
               </div>
             </div>
           </div>
+          <div class="card">
+            <div class="product-img">
+              <img
+                src="/assets/img/product/product-3.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="header">
+              <p class="availability">In Stock</p>
+              <p class="like d-flex justify-content-center align-items-center">
+                <i class="bi bi-heart-fill"></i>
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ulala Shrimp Fresh</h5>
+              <div
+                class="
+                  card-meta
+                  d-flex
+                  align-items-center
+                  justify-content-start
+                "
+              >
+                <p class="category">Sea Food</p>
+                <p class="star mx-3"><i class="bi bi-heart-half"></i> 2.5</p>
+              </div>
+              <div
+                class="footer d-flex align-items-center justify-content-between"
+              >
+                <h3 class="price">$ 16.50</h3>
+                <a href="#" class="btn btn-cart"><i class="bi bi-cart2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="product-img">
+              <img
+                src="/assets/img/product/product-1.png"
+                class="card-img-top"
+              />
+            </div>
+            <div class="header">
+              <p class="availability">In Stock</p>
+              <p class="like d-flex justify-content-center align-items-center">
+                <i class="bi bi-heart-fill"></i>
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Endolita Fried Rice</h5>
+              <div
+                class="
+                  card-meta
+                  d-flex
+                  align-items-center
+                  justify-content-start
+                "
+              >
+                <p class="category">Rice Food</p>
+                <p class="star mx-3"><i class="bi bi-star-fill"></i> 5.0</p>
+              </div>
+              <div
+                class="footer d-flex align-items-center justify-content-between"
+              >
+                <h3 class="price">$ 25.35</h3>
+                <a href="#" class="btn btn-cart"><i class="bi bi-cart2"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- Product End -->
 
+    <!-- Discount Start -->
+    <div class="container-fluid not-hero not-header discount">
+      <div class="col-md-5 heading">
+        <h2 class="amount">Discount 75%</h2>
+        <h3 class="coupon">COUPON: <span>SPRNGDAY</span></h3>
+        <p class="date">Valid until 20 days later</p>
+
+        <button class="btn btn-fzn btn-fzn-border">Use The Coupon</button>
+      </div>
+      <div class="col-md-7 image">
+        <img src="/assets/img/chef/chef-greting.png" alt="" />
+      </div>
+    </div>
+    <!-- Discount End -->
+    <!--  -->
     <!-- Download Start -->
     <!-- <div class="container download">
       <div class="media">
@@ -384,5 +463,6 @@
     ></script>
     <script src="/assets/js/countdown.js"></script>
     <script src="/assets/js/popupheader.js"></script>
+    <script src="/assets/js/counter.js"></script>
   </body>
 </html>
