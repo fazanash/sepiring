@@ -302,6 +302,13 @@ button, button:hover, button:focus {
 .container.not-header {
     padding: 0 20px 32px;
 }
+.container-fluid.not-header {
+    padding: 32px 20px;
+    margin-top: -24px;
+}
+.container.bg-variant {
+    margin-top: -24px;
+}
 .lineword {
     position: relative;;
     z-index: 9;
@@ -328,6 +335,9 @@ button, button:hover, button:focus {
     color: var(--text-white);
     border-radius: 50px;
 }
+.container.hero h3.subtitle {
+    font-size: 0.8rem;
+}
 .container.hero .image {
     background-image: url(/assets/img/ornament/ornament-hero.png);
     background-size: 75%;
@@ -353,8 +363,7 @@ button, button:hover, button:focus {
 /* Service Start */
 .container-fluid.services {
     background-color: var(--background-element);
-    padding: 32px 20px;
-    margin-top: -32px;
+    margin-bottom: 32px;
 }
 .container-fluid.services .row {
     flex-direction: column;
@@ -367,6 +376,9 @@ button, button:hover, button:focus {
     transform: translateY(0);
     transition-duration: 2s;
 }
+.container-fluid .icon-box:nth-last-child(1) {
+    margin-bottom: 0;
+}
 .container-fluid .icon-box:hover {
     background-color: #cdf1c1;
     transform: translateY(-20px);
@@ -375,6 +387,34 @@ button, button:hover, button:focus {
     width: 75px;
 }
 /* Service End */
+
+/* Feature Start */
+.container.feature {
+    background-color: var(--background-transparent);
+    padding: 24px;
+}
+.container.feature h5.title {
+    margin-bottom: 4px;
+    color: var(--brand-normal);
+}
+.container.feature .image {
+    overflow: hidden;
+    height: 350px;
+    margin: 24px 0;
+}
+.container.feature img {
+    width: 350px;
+}
+.container.feature .text {
+    text-align: center;
+}
+/* Feature End */
+
+/* Product Start */
+.container.product h3 {
+    margin-bottom: 0;
+}
+/* Product End */
 
 /* Start: Footer */
 .download {
@@ -418,6 +458,17 @@ button, button:hover, button:focus {
     /* Container Start */
     .container.not-header {
         padding: 0 0 112px;
+    }
+    .container-fluid.not-header {
+        padding: 112px 0;
+        margin-bottom: 112px;
+    }
+    .container.not-header {
+        padding: 112px 0;
+        margin-bottom: 112px;
+    }
+    .container.bg-variant {
+        margin-top: -112px;
     }
     /* Popup Ads Start */
     #popupAds {
@@ -464,8 +515,7 @@ button, button:hover, button:focus {
 
     /* Start Services */
     .container-fluid.services {
-        padding: 112px 0;
-        margin-top: -112px;
+
     }
     .container-fluid.services .row {
         flex-direction: row;
@@ -473,8 +523,36 @@ button, button:hover, button:focus {
     .container-fluid .icon-box {
         margin: 24px 16px;
     }
+    .container-fluid .icon-box:nth-last-child(1) {
+        margin-bottom: 24px;
+    }
     /* End Services */
-}
+
+    /* Feature Start */
+    .container.feature {
+        background-color: rgba(243, 243, 243, 0.829);
+        padding: 48px 48px 0;
+        border-radius: 16px;
+    }
+    .container.feature .image {
+        overflow: hidden;
+        height: 400px;
+        margin: 0 48px 0;
+    }
+    .container.feature img {
+        width: 350px;
+    }
+    .container.feature .text {
+        padding-bottom: 32px;
+    }
+    .container.feature .text.left {
+        text-align: right;
+    }
+    .container.feature .text.right {
+        text-align: left;
+    }
+    /* Feature End */   
+    }
 
 @media (min-width:1200px) {
     /* Start Services */
