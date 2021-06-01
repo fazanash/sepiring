@@ -4,7 +4,7 @@
 :root {
     /* ----- Color ----- */
     --brand-normal: #6BBE4E;
-    --brand-hover: #64af49;
+    --brand-hover: #329952;
     --brand-accent: #FCC536;
     --text-heading: #101510; 
     --text-body: #565656;
@@ -283,7 +283,7 @@ button, button:hover, button:focus {
     background-color: var(--background-transparent);
     position: relative;
 }
-.header .count {
+.header .item-ordered {
     position: absolute;
     padding: 2px 7px;
     background-color: var(--brand-accent);
@@ -445,7 +445,7 @@ button, button:hover, button:focus {
     border-radius: 8px;
 }
 .product .card img {
-    min-height: 200px;
+    min-width: 350px;
     transform: scale(1);
     transition-duration: 3s;
 }
@@ -503,6 +503,42 @@ button, button:hover, button:focus {
 }
 /* Product End */
 
+/* Discount Start */
+.container-fluid.not-header.discount {
+    background: linear-gradient(180deg, #EEECEF 70%, var(--brand-hover) 10%);
+    padding-bottom: 0;
+    height: 650px;
+    overflow: hidden;
+    text-align: center;
+}
+.container-fluid.not-header.discount .container {
+    padding-bottom: 0;
+    position: relative;
+}
+.container-fluid.not-header.discount h1 {
+    font-size: var(--big-font-size);
+}
+.container-fluid.not-header.discount h3 {
+    font-weight: var(--font-reguler);
+    font-size: var(--small-font-size);
+}
+.container-fluid.not-header.discount h3 span {
+    color: var(--brand-normal);
+}
+.container-fluid.not-header.discount .image img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.container-fluid.not-header.discount .image img:nth-child(1) {
+    display: none;
+}
+.container-fluid.not-header.discount .image img:nth-child(2) {
+    transform: scale(2);
+    margin-bottom: 90px;
+}
+/* Discount End */
+
 /* Start: Footer */
 .download {
     background-color: var(--text-heading);
@@ -538,7 +574,12 @@ button, button:hover, button:focus {
 /* End: Footer */
 
 @media (min-width:361px) {
-
+    /* Discount Start */
+    .container-fluid.not-header.discount .image img:nth-child(2) {
+        transform: scale(1.3);
+        margin-bottom: 25px;
+    }
+    /* Discount End */
 }
 
 @media (min-width:768px) {
@@ -653,11 +694,47 @@ button, button:hover, button:focus {
         align-items: center;
     }
     .card-wrapper .card {
-        width: 300px;
+        width: 230px;
         margin-bottom: 0;
     }
-    /* Product End */
+    .product .card img {
+        min-width: 250px;
     }
+    .product .card .product-img {
+        height: 150px;
+    }
+    .container.product .price {
+        font-size: var(--medium-font-size);
+    }
+    /* Product End */
+
+    /* Discount Start */
+    .container-fluid.not-header.discount {
+        background: linear-gradient(90deg, #EEECEF 70%, var(--brand-hover) 10%);
+        height: 650px;
+        overflow: unset;
+        text-align: left;
+    }
+    .container-fluid.not-header.discount h1 {
+        font-size: var(--biggest-font-size);
+    }
+    .container-fluid.not-header.discount h3 {
+        font-weight: var(--font-reguler);
+        font-size: var(--small-font-size);
+    }
+    .container-fluid.not-header.discount .image img:nth-child(1) {
+        display: block;
+    }
+    .container-fluid.not-header.discount .image img:nth-child(2) {
+        display: none;
+    }
+    /* Discount End */
+}
+@media (min-width: 1024px) {
+    .card-wrapper .card {
+        width: 275px;
+    }
+}
 
 @media (min-width:1200px) {
     /* Start Services */
@@ -670,9 +747,28 @@ button, button:hover, button:focus {
     .card-wrapper .card {
         width: 354px;
     }
+    .product .card .product-img {
+        height: 200px;
+    }
     /* Product End */
+
+    /* Discount Start */
+    .container-fluid.not-header.discount {
+        background: linear-gradient(90deg, #EEECEF 70%, var(--brand-hover) 10%);
+        height: 500px;
+        margin-top: 224px;
+    }
+    .container-fluid.not-header.discount .image img:nth-child(1) {
+        display: block;
+        width: 800px;
+    }
+    /* Discount End */
 }
 
 @media (min-width:1920px) {
-
+    /* Start: Hero */
+    .container.hero .counter {
+        margin-top: 40px;
+    }
+    /* End: Hero */
 }

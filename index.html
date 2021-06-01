@@ -19,7 +19,7 @@
     />
 
     <!-- Custom Style CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
     <link rel="shortcut icon" href="/assets/img/brand/favicon-sepiring.png" />
     <title>Sepiring</title>
@@ -135,7 +135,7 @@
               <button
                 class="cart d-flex justify-content-center align-content-center"
               >
-                <span class="count">2</span>
+                <span class="item-ordered">2</span>
                 <i class="bi bi-cart2"></i>
               </button>
             </div>
@@ -148,7 +148,7 @@
     <!-- Hero Start -->
     <div class="container hero">
       <div class="row align-items-center justify-content-between">
-        <div class="col-md-5">
+        <div class="col-md-6">
           <h3 class="subtitle">
             <svg
               width="24"
@@ -420,16 +420,30 @@
     <!-- Product End -->
 
     <!-- Discount Start -->
-    <div class="container-fluid not-hero not-header discount">
-      <div class="col-md-5 heading">
-        <h2 class="amount">Discount 75%</h2>
-        <h3 class="coupon">COUPON: <span>SPRNGDAY</span></h3>
-        <p class="date">Valid until 20 days later</p>
-
-        <button class="btn btn-fzn btn-fzn-border">Use The Coupon</button>
-      </div>
-      <div class="col-md-7 image">
-        <img src="/assets/img/chef/chef-greting.png" alt="" />
+    <div
+      class="
+        container-fluid
+        not-hero not-header
+        discount
+        d-flex
+        justify-content-center
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 heading">
+            <h1 class="amount">Discount 75%</h1>
+            <h3 class="coupon">COUPON: <span>SPRNGDAY</span></h3>
+            <p class="date">Valid until 20 days later</p>
+            <button class="btn btn-fzn btn-fzn-filled my-3">
+              Use The Coupon
+            </button>
+          </div>
+          <div class="col-md-7 image">
+            <img src="/assets/img/chef/chef-greting.png" alt="" />
+            <img src="/assets/img/chef/chef-lookup.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
     <!-- Discount End -->
