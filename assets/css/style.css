@@ -63,7 +63,7 @@ h1 {
     line-height: 1.1em;
 }
 h2 {
-    font-size: var(--bigger-font-size);
+    font-size: var(--big-font-size);
     font-weight: var(--font-black);
 }
 h3 {
@@ -399,6 +399,9 @@ button, button:hover, button:focus {
     -webkit-background-clip: text;
     color: var(--background-transparent);
 }
+.container.feature h5.title:hover {
+    background-image: linear-gradient(270deg, var(--brand-normal), var(--brand-accent));
+}
 .container.feature .image {
     overflow: hidden;
     height: 350px;
@@ -539,6 +542,67 @@ button, button:hover, button:focus {
 }
 /* Discount End */
 
+/* Team Start */
+.container.team {
+    margin-top:  32px;
+}
+.container.team .team-box {
+    position: relative;
+    overflow: hidden;
+}
+.container.team .team-box .team-info {
+    position: absolute;
+    top: 0;
+    background-color: rgba(34, 32, 32, 0.651);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    justify-content: flex-end;
+    visibility: hidden;
+    transition-duration: 1s;
+}
+.container.team .team-box .pict-team {
+    transform: scale(1);
+    transition-duration: 3s;
+}
+.container.team .team-box:hover .team-info {
+    visibility: visible;
+}
+.container.team .team-box:hover .pict-team {
+    transform: scale(1.3);
+}
+.container.team .team-box .team-info h5, .container.team .team-box .team-info p {
+    color: var(--text-white);
+    margin-bottom: 4px;
+}
+.container.team .team-box .team-info p {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+.container.team .team-box .team-join {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    justify-content: flex-end;
+}
+.container.team .team-box .team-join h5 {
+    font-size: var(--small-font-size);
+}
+.container.team .team-box .team-join a {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.container.team .team-box .team-join a:hover {
+    color: var(--brand-hover);
+    cursor: pointer;
+}
+/* Team End */
+
 /* Start: Footer */
 .download {
     background-color: var(--text-heading);
@@ -580,6 +644,15 @@ button, button:hover, button:focus {
         margin-bottom: 25px;
     }
     /* Discount End */
+
+    /* Team Start */
+    .container.team .team-box .team-join h5 {
+        font-size: var(--medium-font-size);
+    }
+    .container.team .team-box .team-join a {
+        font-size: var(--smallest-font-size);
+    }
+    /* Team End */
 }
 
 @media (min-width:768px) {
@@ -729,11 +802,28 @@ button, button:hover, button:focus {
         display: none;
     }
     /* Discount End */
+    
+    /* Team Start */
+    .container.team .team-box .team-join h5 {
+        font-size: var(--biggest-font-size);
+    }
+    .container.team .team-box .team-join a {
+        font-size: var(--smaller-font-size);
+    }
+    /* Team End */
 }
 @media (min-width: 1024px) {
     .card-wrapper .card {
         width: 275px;
     }
+    /* Team Start */
+    .container.team .team-box .team-join h5 {
+        font-size: var(--big-font-size);
+    }
+    .container.team .team-box .team-join a {
+        font-size: var(--smaller-font-size);
+    }
+    /* Team End */
 }
 
 @media (min-width:1200px) {
@@ -763,6 +853,15 @@ button, button:hover, button:focus {
         width: 800px;
     }
     /* Discount End */
+
+    /* Team Start */
+    .container.team .team-box .team-join h5 {
+        font-size: var(--biggest-font-size);
+    }
+    .container.team .team-box .team-join a {
+        font-size: var(--small-font-size);
+    }
+    /* Team End */
 }
 
 @media (min-width:1920px) {
