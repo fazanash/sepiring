@@ -339,7 +339,7 @@ button, button:hover, button:focus {
     font-size: 0.8rem;
 }
 .container.hero .image {
-    background-image: url(https://github.com/fazanash/sepiring/blob/master/assets/img/ornament/ornament-hero.png);
+    background-image: url(/assets/img/ornament/ornament-hero.png);
     background-size: 75%;
     background-position: 50% 80%;
     background-repeat: no-repeat;
