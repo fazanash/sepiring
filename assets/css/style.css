@@ -723,7 +723,7 @@ button, button:hover, button:focus {
 
 /* Download */
 .container-fluid.download a {
-    padding: 16px 24px;
+    padding: 12px 16px;
     border-radius: 50px;
     background-color: var(--brand-normal);
     color: var(--text-heading);
@@ -986,6 +986,11 @@ button, button:hover, button:focus {
         margin-left: 16px;
     }
     /* Footer End */
+
+    /* Download Start */
+    .container-fluid.download a {
+        padding: 16px 24px; 
+    }
 }
 @media (min-width: 1024px) {
     h3.subtitle {
