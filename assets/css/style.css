@@ -721,6 +721,27 @@ button, button:hover, button:focus {
 }
 /* End: Footer */
 
+/* Download */
+.container-fluid.download {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -105px;
+    z-index: 999;
+    
+}
+.container-fluid.download a {
+    padding: 16px 24px;
+    border-radius: 50px;
+    background-color: var(--brand-normal);
+    color: var(--text-heading);
+}
+
 @media (min-width:361px) {
     /* Discount Start */
     .container-fluid.not-header.discount .image img:nth-child(2) {
