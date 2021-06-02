@@ -655,36 +655,41 @@ button, button:hover, button:focus {
 /* App End */
 
 /* Start: Footer */
-.download {
-    background-color: var(--text-heading);
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.download .media {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.container-fluid.not-header.not-hero.footer {
+    background-color: var(--background-dark);
+    margin: 0;
     padding-bottom: 24px;
 }
-.download .name {
-    padding-bottom: 8px;
+.container-fluid.not-header.not-hero.footer .container > .row {
+    justify-content: space-between;
 }
-.download .media .bi {
-    padding: 0 8px;
-    color: var(--text-light);
+.container-fluid.footer .brand img {
+    margin-bottom: 24px;
+    width: 250px;
 }
-.download p, .download a {
-    margin: 0 8px 0 0;
-    color: var(--text-light);
-    font-size: 14px;
+.container-fluid.footer .contact {
+    padding: 24px 0 0;
 }
-.download .btn, .download .btn:hover {
-    border: 1px solid var(--element-color);
-    color: var(--text-light);
-    border-radius: 8px;
+.container-fluid.footer h3, 
+.container-fluid.footer h6, 
+.container-fluid.footer a, 
+.container-fluid.footer p {
+    color: var(--text-white);
+}
+.container-fluid.footer a {
+    line-height: 32px;
+}
+.container-fluid.footer a:hover {
+    color: var(--brand-normal);
+    cursor: pointer;
+}
+.container-fluid.footer p {
+    font-size: var(--smallest-font-size);
+    margin-left: 45px;
+    text-indent: -16px;
+}
+.container-fluid.footer p .bi {
+    margin-right: 12px;
 }
 /* End: Footer */
 
@@ -987,7 +992,7 @@ button, button:hover, button:focus {
         padding: 40px;
     }
     .container.team .team-box .team-join h5 {
-        font-size: var(--biggest-font-size);
+        font-size: var(--bigger-font-size);
     }
     .container.team .team-box .team-join a {
         font-size: var(--small-font-size);
