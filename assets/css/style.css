@@ -545,6 +545,7 @@ button, button:hover, button:focus {
 /* Team Start */
 .container.team {
     margin-top:  32px;
+    margin-bottom: 0;
 }
 .container.team .team-box {
     position: relative;
@@ -603,6 +604,56 @@ button, button:hover, button:focus {
 }
 /* Team End */
 
+/* App Start */
+.container-fluid.not-header.not-hero.app {
+    overflow: hidden;
+    padding: 32px 0 0;
+    margin-bottom: 0;
+}
+.container-fluid.app .container {
+    background-image: linear-gradient(to top, var(--brand-normal), var(--brand-hover));
+    border-radius: 20px 20px 0 0;
+    height: 700px;
+    text-align: center;
+}
+.container-fluid.app .container > .row {
+    padding: 32px 0 0;
+    flex-direction: column;
+}
+.container-fluid.app .container .row:nth-child(2) {
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.container-fluid.app .container .row:nth-child(2) a {
+    margin: 8px 0;
+}
+.container-fluid.app h2 {
+    color: var(--text-white);
+    font-size: var(--bigger-font-size);
+}
+.container-fluid.app .store {
+    background-color: #fff;
+    padding: 14px 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+.container-fluid.app .store h5 {
+    margin-bottom: 0;
+}
+.container-fluid.app .store  img  {
+    width: 35px;
+}
+.container-fluid.app .appmockup {
+    height: 350px;
+    overflow: hidden;
+}
+.container-fluid.app .appmockup img {
+    bottom:-250px;
+    width: 450px;
+    right: 10%;
+}
+/* App End */
+
 /* Start: Footer */
 .download {
     background-color: var(--text-heading);
@@ -653,6 +704,15 @@ button, button:hover, button:focus {
         font-size: var(--smallest-font-size);
     }
     /* Team End */
+
+    /* App Start */
+    .container-fluid.app .appmockup {
+        height: 450px;
+    }
+    .container-fluid.app .container .row:nth-child(2) a {
+        margin: 8px;
+    }
+    /* App End */
 }
 
 @media (min-width:768px) {
@@ -804,6 +864,12 @@ button, button:hover, button:focus {
     /* Discount End */
     
     /* Team Start */
+    .container.team {
+        margin-bottom: 0;
+    }
+    .container.team .team-box .team-join {
+        padding: 48px;
+    }
     .container.team .team-box .team-join h5 {
         font-size: var(--biggest-font-size);
     }
@@ -811,19 +877,81 @@ button, button:hover, button:focus {
         font-size: var(--smaller-font-size);
     }
     /* Team End */
+
+    /* App Start */
+    .container-fluid.app .container {
+        height: 700px;
+    }
+    .container-fluid.app .container > .row {
+        padding: 64px;
+    }
+    .container-fluid.app .container .row:nth-child(2) {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 40px 0;
+    }
+    .container-fluid.app .container .row:nth-child(2) a:nth-child(1), .container-fluid.app .container .row:nth-child(2) a {
+        margin: unset;
+    }
+    .container-fluid.app .store {
+        padding: 16px 24px;
+        width: 200px;
+    }
+    .container-fluid.app .container .appmockup {
+        height: 450px;
+    }
+    /* App End */
 }
 @media (min-width: 1024px) {
+    h3.subtitle {
+        font-size: var(--medium-font-size);
+    }
+    h2 {
+        font-size: var(--biggest-font-size);
+        font-weight: var(--font-black);
+        margin-bottom: 24px;
+    }
     .card-wrapper .card {
         width: 275px;
     }
     /* Team Start */
-    .container.team .team-box .team-join h5 {
-        font-size: var(--big-font-size);
+    .container.team .team-box .team-join h5{
+        font-size: var(--title-font-size);
     }
     .container.team .team-box .team-join a {
-        font-size: var(--smaller-font-size);
+        font-size: var(--medium-font-size);
     }
     /* Team End */
+
+    /* App Start */
+    .container-fluid.not-header.not-hero.app {
+        overflow: hidden;
+        padding: 224px 0 0;
+        margin-bottom: 0;
+    }
+    .container-fluid.app .container {
+        text-align: left;
+        height: 300px;
+    }
+    .container-fluid.app .container > .row {
+        padding: 64px 24px 0;
+        flex-direction: row;
+    }
+    .container-fluid.app .container .row:nth-child(2) {
+        justify-content: flex-start;
+    }
+    .container-fluid.app .appmockup {
+        height: 500px;
+        transform: translateY(-200px);
+    }
+    .container-fluid.app .store {
+        padding: 16px 24px;
+        width: 200px;
+    }
+    .container-fluid.app .container .row:nth-child(2) a:nth-child(1) {
+        margin-right: 16px;
+    }
+    /* App End */
 }
 
 @media (min-width:1200px) {
@@ -855,6 +983,9 @@ button, button:hover, button:focus {
     /* Discount End */
 
     /* Team Start */
+    .container.team .team-box .team-join {
+        padding: 40px;
+    }
     .container.team .team-box .team-join h5 {
         font-size: var(--biggest-font-size);
     }
@@ -862,6 +993,36 @@ button, button:hover, button:focus {
         font-size: var(--small-font-size);
     }
     /* Team End */
+
+    /* App Start */
+    .container-fluid.not-header.not-hero.app {
+        padding: 200px 0 0;
+    }
+    .container-fluid.app .container {
+        height: 350px;
+        padding: 65px 112px;
+    }
+    .container-fluid.app .container > .row {
+        align-self: center;
+        padding: 50px 0 0;
+    }
+    .container-fluid.app .container .row:nth-child(2) {
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .container-fluid.app .container .row:nth-child(2) a:nth-child(1) {
+        margin-right: 16px;
+    }
+    .container-fluid.app .container .appmockup {
+        height: unset;
+        transform: translateY(-300px);
+    }
+    .container-fluid.app .appmockup img {
+        width: 450px;
+        right: 15%;
+        bottom: -350px;
+    }
+    /* App End */
 }
 
 @media (min-width:1920px) {

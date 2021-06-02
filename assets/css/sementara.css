@@ -1,0 +1,40 @@
+/* App Start */
+.container-fluid.not-header.not-hero.app {
+    overflow: hidden;
+    padding: 175px 0 0;
+    margin-bottom: 0;
+}
+.container-fluid.app .container {
+    background-image: linear-gradient(to top, var(--brand-normal), var(--brand-hover));
+    border-radius: 20px 20px 0 0;
+    height: 400px;
+    position: relative;
+}
+.container-fluid.app .container > .row {
+    padding: 112px;
+}
+.container-fluid.app h2 {
+    color: var(--text-white);
+}
+.container-fluid.app .store {
+    background-color: #fff;
+    padding: 8px 10px;
+    width: 230px;
+    border-radius: 8px;
+}
+.container-fluid.app .store h5 {
+    margin-bottom: 0;
+}
+.container-fluid.app .store  img  {
+    width: 65px;
+}
+.container-fluid.app .appmockup {
+    height: 200px;
+    overflow: hidden;
+}
+.container-fluid.app .appmockup img {
+    position: absolute;
+    bottom:-275px;
+    right: 10%;
+}
+/* App End */
